@@ -1,0 +1,15 @@
+/**
+ * Overrides.scss
+ * Use to override vendor-specific behavior
+ */
+
+/**
+ * Include (vendor) override files here
+ */
+@import "overrides/bootstrap";
+@import "overrides/featherlight";
+@import "overrides/nouislider";
+@import "overrides/recaptcha";
+@import "overrides/shepherd";
+@import "overrides/slick";
+@import "overrides/turbolinks";

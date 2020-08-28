@@ -1,0 +1,151 @@
+body{
+ margin:0;
+ color:#1b1b19;
+ font: 16px/26px sans-serif;
+ min-width: 320px;
+ line-height: normal;
+}
+
+#header {
+ position: relative;
+ width: 100%;
+ text-align: right;
+ clear: both;
+ margin: 0 0 24px 0;
+}
+
+#header img {
+  width: 242px;
+  height: 68px;
+}
+
+table {
+  position: relative;
+  width: 100%;
+}
+
+table, tr, td {
+  border: 1px solid #e6e6e6;
+  vertical-align: top;
+}
+table td {
+  width: 60%;
+  padding: 2px 5px;
+}
+.overview{
+  position: relative;
+  font-size: 13px;
+  line-height: 15px;
+}
+#footer {
+  width: 100%;
+  border-top: 1px solid #a9a9a9;
+  padding-top: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 12px;
+}
+#footer .disclaimer {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  font-size: 9px;
+  font-style: italic;
+}
+#wrapper,
+.cf-popup .fancybox-close {display:none !important;}
+.fancybox-overlay-fixed {
+	overflow:visible !important;
+	position:static !important;
+	background:none !important;
+}
+.cf-popup {
+	width:100% !important;
+	position:static !important;
+	color:#000;
+}
+.cf-popup .fancybox-skin {
+	padding:0 !important;
+}
+.cf-popup .fancybox-outer {
+	margin-top:0 !important;
+}
+.cf-popup .fancybox-inner {
+	width:100% !important;
+	height:auto !important;
+	overflow:visible !important;
+}
+/* data-list */
+.data-list {
+  list-style:none;
+  margin: 40px 0 36px;
+  padding:0;
+  background:#f5f4f1;
+}
+.data-list li {padding:0 140px 0 20px;}
+.data-list li + li,
+.data-list li li {border-top:2px solid #fff;}
+.data-list li li .name:before {
+  content:'-';
+  margin-right:7px;
+}
+.data-list li:after {
+  clear:both;
+  content:"";
+  display:block;
+}
+.data-list .name,
+.data-list .value {padding:16px 0 15px;}
+.data-list .name {
+  float:left;
+  width:100%;
+}
+.data-list .value {
+  float:right;
+  text-align:right;
+  width:120px;
+  margin:0 -120px 0 0;
+}
+.data-list ul {
+  list-style:none;
+  margin:0 -140px 0 -20px;
+  padding:0;
+  clear:both;
+  font-family: sans-serif;
+}
+.popup {width:100%;}
+.popup .btn {display:none !important;}
+.data-list,
+.data-list ul {
+  background:none;
+}
+.data-list ul {margin-right:-20px;}
+.data-list .marked-blue{
+  margin-top: -20px;
+}
+.data-list .marked-blue,
+.data-list .marked-green,
+.data-list .marked-grey {
+	background:none;
+	color:#000;
+}
+.data-list .name,
+.data-list .value {
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.data-list .name {width:82%;}
+.data-list .value {
+	width:17%;
+	margin-right:0;
+}
+.data-list li {
+	position:relative;
+	page-break-inside:avoid;
+	padding-right:20px;
+}
+.data-list li + li {border-top:1px solid #000;}
+.data-list li li,
+.data-list li li + li {border-top:1px dotted #000 !important;}
+

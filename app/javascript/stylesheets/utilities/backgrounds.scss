@@ -1,0 +1,72 @@
+/**
+ * Background utility classes
+ */
+
+// Add all styles required to display a background image.
+// Except for the background image itself. Which must be set in html.
+
+.bg-image {
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @each $name, $color in $theme-colors {
+    &.bg-image-#{$name} {
+      @include overlay(rgba($color, 0.8));
+    }
+  }
+
+  &.bg-image-contain {
+    background-size: contain;
+  }
+
+  &.bg-image-left-top {
+    background-position: left top;
+  }
+  &.bg-image-center-top {
+    background-position: 50% top;
+  }
+  &.bg-image-right-top {
+    background-position: right top;
+  }
+  &.bg-image-left-center {
+    background-position: left 50%;
+  }
+  &.bg-image-right-center {
+    background-position: right 50%;
+  }
+  &.bg-image-left-bottom {
+    background-position: left bottom;
+  }
+  &.bg-image-center-bottom {
+    background-position: 50% bottom;
+  }
+  &.bg-image-right-bottom {
+    background-position: right bottom;
+  }
+}
+
+@each $colour in $background-pattern-colours {
+  @each $variant in $background-pattern-variants {
+    .bg-pattern-#{$colour}-#{$variant} {
+      background-position: 50% 50% !important;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      background-image: url("../images/backgrounds/background-#{$colour}-#{$variant}.svg") !important;
+    }
+  }
+}
+
+@each $name, $color in $theme-colors {
+  .bg-#{$name}-transparent {
+    background-color: rgba($color, 0.95) !important;
+  }
+}
+
+.bg-transparent {
+  background: transparent !important;
+}
+
+.bg-fixed {
+  background-attachment: fixed !important;
+}

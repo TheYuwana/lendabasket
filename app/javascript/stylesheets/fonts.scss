@@ -1,0 +1,98 @@
+/**
+ * Fonts.less
+ * Define a mixin for fonts as well as including all webfonts as used in the project
+ */
+
+/**
+  * Fallback UTF 8 font
+  *
+  * To be used right before a serif or sans-serif font-family rule.
+  */
+@font-face {
+  font-family: "UTF8 Fallback";
+  font-display: swap;
+  src: local("Noto Color Emoji"), local("Twemoji Mozilla"),
+    local("Apple Color Emoji"), local("Segoe UI Emoji"),
+    local("Segoe UI Symbol");
+}
+
+/**
+ * Mixin to define font-faces using bulletproof font-face markup.
+ */
+
+@mixin font-variant(
+  $name,
+  $filename,
+  $font-weight,
+  $font-style,
+  $dir: "../fonts"
+) {
+  font-family: $name;
+  font-display: swap;
+  src: url("#{$dir}/#{$filename}.woff2") format("woff2"),
+    url("#{$dir}/#{$filename}.woff") format("woff");
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+
+/**
+ * F37Ginger - Branding typeface
+ */
+
+@font-face {
+  @include font-variant("F37Ginger", "f37ginger/F37Ginger-Light", 300, normal);
+}
+@font-face {
+  @include font-variant(
+    "F37Ginger",
+    "f37ginger/F37Ginger-LightItalic",
+    300,
+    italic
+  );
+}
+
+@font-face {
+  @include font-variant(
+    "F37Ginger",
+    "f37ginger/F37Ginger-Regular",
+    400,
+    normal
+  );
+}
+@font-face {
+  @include font-variant("F37Ginger", "f37ginger/F37Ginger-Italic", 400, italic);
+}
+
+@font-face {
+  @include font-variant("F37Ginger", "f37ginger/F37Ginger-Bold", 700, normal);
+}
+@font-face {
+  @include font-variant(
+    "F37Ginger",
+    "f37ginger/F37Ginger-BoldItalic",
+    700,
+    italic
+  );
+}
+
+/**
+ * Clearface
+ */
+
+@font-face {
+  @include font-variant("Clearface", "clearface/clearface", 400, normal);
+}
+@font-face {
+  @include font-variant("Clearface", "clearface/clearface", 400, italic);
+}
+
+/**
+ * Maxeville
+ */
+
+@font-face {
+  @include font-variant("Maxeville", "maxeville/maxeville", 400, normal);
+}
+@font-face {
+  @include font-variant("Maxeville", "maxeville/maxeville", 400, italic);
+}

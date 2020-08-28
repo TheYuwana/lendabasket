@@ -1,0 +1,19 @@
+/**
+ * Shepherd overrides
+ */
+
+.shepherd-content {
+  text-align: left !important;
+
+  .shepherd-header {
+    background: $light !important;
+
+    h3.shepherd-title {
+      color: $dark !important;
+    }
+  }
+
+  .shepherd-text {
+    color: $dark !important;
+  }
+}

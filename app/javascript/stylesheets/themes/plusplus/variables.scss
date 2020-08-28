@@ -1,0 +1,200 @@
+/**
+ * Variables, based on bootstraps default variables.
+ *
+ * Overrides for PlusPlus
+ */
+
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+//
+// Color system
+//
+
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$grays: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900,
+  ),
+  $grays
+);
+
+// Brand / theme colors
+
+$blackberry: #510a37;
+$azalea: #f2b3d2;
+$flamingo: #ed6040;
+
+$colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "blackberry": $blackberry,
+    "azalea": $azalea,
+    "flamingo": $flamingo,
+    "white": $white,
+    "gray": $gray-600,
+    "gray-dark": $gray-800,
+  ),
+  $colors
+);
+
+$primary: $blackberry;
+$primary-two: $azalea;
+$primary-three: $flamingo;
+
+$secondary-one: #141464;
+$secondary-one-light: #285078;
+$secondary-one-lighter: #aabed2;
+$secondary-two: #64320a;
+$secondary-two-light: #af7d5a;
+$secondary-two-lighter: #ebd2c8;
+$secondary-three: #3c4650;
+$secondary-three-light: #828273;
+$secondary-three-lighter: #d7d2c3;
+$secondary-four: #19644b;
+$secondary-four-light: #afc8af;
+$secondary-four-lighter: #cddcaf;
+
+$secondary: $primary-two;
+$light: $secondary-three-lighter;
+$dark: $blackberry;
+$success: $secondary-four;
+$warning: $secondary-two-light;
+$danger: $primary-three;
+$info: $secondary-one-light;
+
+$theme-colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+
+// Provided mainly because flash[:notice] and flash[:alert] are rails standard.
+// and it's easy to have them available for stuff like .alert-notice
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "primary-two": $primary-two,
+    "primary-three": $primary-three,
+    "secondary": $secondary,
+    "secondary-one": $secondary-one,
+    "secondary-one-light": $secondary-one-light,
+    "secondary-one-lighter": $secondary-one-lighter,
+    "secondary-two": $secondary-two,
+    "secondary-two-light": $secondary-two-light,
+    "secondary-two-lighter": $secondary-two-lighter,
+    "secondary-three": $secondary-three,
+    "secondary-three-light": $secondary-three-light,
+    "secondary-three-lighter": $secondary-three-lighter,
+    "secondary-four": $secondary-four,
+    "secondary-four-light": $secondary-four-light,
+    "secondary-four-lighter": $secondary-four-lighter,
+    "light": $light,
+    "dark": $dark,
+    "success": $success,
+    "warning": $warning,
+    "danger": $danger,
+    "info": $info,
+  ),
+  $theme-colors
+);
+
+// Set a specific jump point for requesting color jumps
+$theme-color-interval: 8%;
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold: 180;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark: $primary;
+$yiq-text-light: $white;
+
+//
+// Background pattern variables
+//
+
+$background-pattern-colours: ();
+$background-pattern-variants: ();
+
+//
+// Branded Icons
+//
+// Are expected to be present in icons/{background}/{name}.svg
+//
+
+$branded-icons: ();
+$branded-icon-backgrounds: ();
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret: true;
+$enable-rounded: true;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: true;
+$enable-prefers-reduced-motion-media-query: true;
+$enable-hover-media-query: false; // Deprecated, no longer affects any compiled CSS
+$enable-grid-classes: true;
+$enable-pointer-cursor-for-buttons: true;
+$enable-print-styles: true;
+$enable-responsive-font-sizes: false;
+$enable-validation-icons: true;
+$enable-deprecation-messages: true;
+
+// Cards
+
+$card-footer-bg: $primary-two;
+
+// fonts
+
+$font-family-sans-serif: "Helvetica", "Roboto", "San Francisco", "Segoe",
+  "Arial", "UTF8 Fallback", sans-serif;
+
+$headings-font-family: Clearface, "UTF8 Fallback", sans-serif;
+
+$navbar-font-family: $headings-font-family;
+$navbar-font-family: $headings-font-family;
+$input-btn-font-family: $headings-font-family;
+
+// links
+
+$link-color: $primary-three;
+$link-hover-color: darken($link-color, 15%);
+
+// Dropdowns
+$dropdown-color: $dark;
+$dropdown-bg: $light;
+$dropdown-border-color: darken($light, 10%);
+$dropdown-divider-bg: $dark;
+
+$dropdown-link-color: $dark;
+$dropdown-link-hover-bg: $secondary;
+
+$dropdown-link-disabled-color: $gray-600;
+
+// mobile menu
+$mobile-menu-bg: $light;
+$mobile-menu-color: $dark;

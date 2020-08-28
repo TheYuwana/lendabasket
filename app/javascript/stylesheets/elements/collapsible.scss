@@ -1,0 +1,28 @@
+/**
+ * Defines a collapsible element, that could be used, for example, for FAQ items
+ * in collaboration with the collapse behaviour.
+ */
+
+.collapsible {
+  background-color: $light;
+  border-radius: $border-radius;
+  display: block;
+  overflow: hidden;
+  margin-bottom: $spacer;
+
+  .title {
+    margin: 0;
+    display: block;
+    width: 100%;
+    font-size: $font-size-base;
+    background: $light;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  .uncollapses {
+    padding: 20px;
+    width: 100%;
+    display: none;
+  }
+}

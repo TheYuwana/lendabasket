@@ -1,0 +1,25 @@
+/**
+ * Define reuseable slices, 100% width with a fixed height
+ */
+
+.slice {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  padding-top: $grid-gutter-width;
+  padding-bottom: $grid-gutter-width;
+
+  &.slice-light {
+    @include text-color($dark);
+  }
+
+  &.slice-dark {
+    @include text-color($white);
+  }
+
+  .content {
+    display: block;
+    align-self: center;
+  }
+}

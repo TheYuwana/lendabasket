@@ -1,0 +1,57 @@
+/**
+ * Navbar, mainly adds to bootstraps navbar
+ */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $zindex-fixed;
+  font-family: $navbar-font-family;
+
+  hr.brandline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: $navbar-brandline-height;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: $zindex-fixed + 1;
+    background: $secondary;
+    border: none;
+  }
+
+  .navbar-brand {
+    line-height: 1;
+    .logo {
+      height: $navbar-brand-height;
+      width: auto;
+    }
+  }
+
+  .navbar-toggler {
+    line-height: 0;
+    border: none;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      padding-top: $navbar-nav-link-padding-y;
+      padding-bottom: $navbar-nav-link-padding-y;
+    }
+  }
+
+  .nav-unset-padding {
+    margin-top: -$navbar-padding-y;
+    margin-bottom: -$navbar-padding-y;
+    padding-top: $nav-link-padding-y + $navbar-padding-y;
+    padding-bottom: $nav-link-padding-y + $navbar-padding-y;
+  }
+
+  .dropdown-menu-custom {
+    width: 400px;
+  }
+}

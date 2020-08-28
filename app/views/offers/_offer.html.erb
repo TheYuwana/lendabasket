@@ -1,0 +1,37 @@
+<div class="card my-5 border-0 shadow">
+  <div class="card-body" data-offer-id=<%= offer.id %> >
+    <h2><%= offer.name %></h2>
+    <p><%= offer.intro %></p>
+
+    <ul class="list-unstyled">
+      <li>
+        <i class="lahi-percent"></i> <%= offer.interest %>% interest
+      </li>
+      <li>
+        <i class="lahi-euro"></i> <%= humanized_money_with_symbol(offer.funding_target) %> needed
+      </li>
+      <li>
+        <i class="lahi-calendar"></i> <%= offer.maturity_in_months %> months maturity
+      </li>
+      <li>
+        <i class="lahi-users"></i> <%= offer.number_of_investors %> investors have already comitted!
+      </li>
+    </ul>
+
+    <div class="progress">
+      <div
+        class="progress-bar"
+        role="progressbar"
+        style="width: <%= offer.funding_percentage %>%; min-width: 3rem;"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      >
+        <%= number_to_percentage(offer.funding_percentage, precision: 0) %>
+      </div>
+    </div>
+    <div class="small text-right">
+      <%= humanized_money_with_symbol(offer.available_amount) %> to go
+    </div>
+  </div>
+</div>

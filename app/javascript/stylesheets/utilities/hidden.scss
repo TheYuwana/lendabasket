@@ -1,0 +1,10 @@
+/**
+ * Hidden
+ *
+ * Will hide an element, but not using !important; Use this when an element
+ * has to be dynamically readded later.
+ */
+
+.hidden {
+  display: none;
+}

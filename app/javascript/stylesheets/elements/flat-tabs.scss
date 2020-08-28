@@ -1,0 +1,111 @@
+/**
+ * Flat tabs
+ *
+ * Add functionality for an inline menu which shows plain links but underlines
+ * them on hover and .active status.
+ *
+ * Usage:
+ * ul.flat-tabs
+ *   li.flat-tab
+ *     a href="url" item
+ *   li.flat-tab.active
+ *     a href="url" selected item
+ *
+ * Use flat-tabs-{breakpoint}-collapse to force the flat-tabs to collapse on
+ * the given breakpoint and below.
+ */
+
+.flat-tabs {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+  display: block;
+
+  @each $breakpoint, $size in $grid-breakpoints {
+    @include media-breakpoint-down($breakpoint) {
+      &.flat-tabs-#{$breakpoint}-collapse {
+        .flat-tab {
+          display: block;
+          margin-right: 0;
+
+          &:not(:last-child) {
+            margin-right: 0;
+          }
+
+          .flat-link {
+            display: inline-block;
+            border: none;
+
+            border-style: $flat-tabs-collapsed-border-style;
+            border-width: $flat-tabs-collapsed-border-width;
+            border-color: $flat-tabs-collapsed-border-color;
+
+            &.active,
+            &:active {
+              border-style: $flat-tabs-collapsed-active-border-style;
+              border-width: $flat-tabs-collapsed-active-border-width;
+              border-color: $flat-tabs-collapsed-active-border-color;
+            }
+
+            &.hover,
+            &:hover {
+              border-style: $flat-tabs-collapsed-hover-border-style;
+              border-width: $flat-tabs-collapsed-hover-border-width;
+              border-color: $flat-tabs-collapsed-hover-border-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .flat-tab {
+    display: inline-block;
+    margin: $flat-tabs-margin-y 0;
+
+    &:not(:last-child) {
+      margin-right: $flat-tabs-spacing;
+    }
+
+    .flat-link {
+      display: block;
+      color: $flat-tabs-link-color;
+      padding: $flat-tabs-padding-y $flat-tabs-padding-x;
+      border-style: $flat-tabs-border-style;
+      border-width: $flat-tabs-border-width;
+      border-color: $flat-tabs-border-color;
+      text-decoration: none;
+
+      .badge {
+        background-color: $flat-tabs-link-color;
+        color: color-yiq($flat-tabs-link-color);
+      }
+
+      &.active,
+      &:active {
+        color: $flat-tabs-active-color;
+        border-style: $flat-tabs-active-border-style;
+        border-width: $flat-tabs-active-border-width;
+        border-color: $flat-tabs-active-border-color;
+
+        .badge {
+          background-color: $flat-tabs-active-color;
+          color: color-yiq($flat-tabs-active-color);
+        }
+      }
+
+      &.hover,
+      &:hover {
+        color: $flat-tabs-hover-color;
+        border-style: $flat-tabs-hover-border-style;
+        border-width: $flat-tabs-hover-border-width;
+        border-color: $flat-tabs-hover-border-color;
+
+        .badge {
+          background-color: $flat-tabs-hover-color;
+          color: color-yiq($flat-tabs-hover-color);
+        }
+      }
+    }
+  }
+}

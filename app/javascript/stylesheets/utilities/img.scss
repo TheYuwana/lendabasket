@@ -1,0 +1,26 @@
+/**
+ * img classes in combination with bootstrap img-responsive
+ * img-centered, use to set an image centred
+ * img-small, use to set a reasonable maximum width on an image
+ */
+
+.img-tiny {
+  width: 24px;
+}
+.img-small {
+  width: 200px;
+}
+.img-medium {
+  width: 400px;
+}
+.img-icon {
+  height: 0.9em;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.img-row {
+  height: 2rem;
+  width: auto;
+}

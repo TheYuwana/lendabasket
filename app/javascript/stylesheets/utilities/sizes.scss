@@ -1,0 +1,34 @@
+/**
+ * Define utility classes for height and with
+ *
+ * min-height-* will define a min-height on the element
+ * min-width-* will define a min-width on the element
+ * max-height-* will define a max-height on the element
+ * max-width-* will define a max-width on the element
+ *
+ * * can be all elements from $sizes
+ */
+
+@each $name, $size in $sizes {
+  .min-height-#{$name} {
+    min-height: $size;
+  }
+}
+
+@each $name, $size in $sizes {
+  .min-width-#{$name} {
+    min-width: $size;
+  }
+}
+
+@each $name, $size in $sizes {
+  .max-height-#{$name} {
+    max-height: $size;
+  }
+}
+
+@each $name, $size in $sizes {
+  .max-width-#{$name} {
+    max-width: $size;
+  }
+}

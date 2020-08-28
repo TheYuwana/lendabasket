@@ -1,0 +1,35 @@
+/**
+ * Regulatory banners for different markets are defined here
+ * Please note that there are some classes added to structure.scss to account
+ * for the height of these banners
+ */
+
+.regulatory-banner {
+  background-color: #fff;
+  border: 2px solid #000;
+  cursor: pointer;
+
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: $navbar-height;
+  text-align: center;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  z-index: 999;
+
+  @media (min-width: $regulatory-banner-breakpoint) {
+    height: $regulatory-banner-max-height + 4px;
+  }
+
+  img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-height: $regulatory-banner-max-height;
+    max-width: 100%;
+    width: auto;
+  }
+}

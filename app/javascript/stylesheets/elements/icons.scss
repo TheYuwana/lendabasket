@@ -1,0 +1,31 @@
+/**
+ *
+ * Define all the lendahand brand icons
+ *
+ * See variables.scss for all possible names and backgrounds.
+ * Usage examples:
+ *
+ * i.icon-dark-user
+ * i.icon-light-magnifying
+ * i.icon-coloured-recycle
+ *
+ */
+
+@each $background in $branded-icon-backgrounds {
+  @each $name in $branded-icons {
+    .icon-#{$background}-#{$name} {
+      background-image: url("../images/icons/icon-#{$background}-background-#{$name}.svg");
+      background-position: 50% 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: inline-block;
+
+      width: 1.5em;
+      line-height: 1.5em;
+
+      &:before {
+        content: "\00a0";
+      }
+    }
+  }
+}

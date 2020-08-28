@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lendahand</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <%= csrf_meta_tags %>
+
+  <%= javascript_pack_tag "application", defer: "true",
+                                         data: {turbolinks_track: "reload"} %>
+
+  <%= stylesheet_pack_tag "application", defer: "true",
+                                         data: {turbolinks_track: "reload"} %>
+
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <%= link_to root_path, class: "navbar-brand mx-g05", id: "navbar-brand",
+        data: {turbolinks_permanent: true} do %>
+      <%= image_pack_tag("logos/logo-dark-background.svg", class: "logo") %>
+    <% end %>
+  </nav>
+
+  <%= yield %>
+</body>
+</html>

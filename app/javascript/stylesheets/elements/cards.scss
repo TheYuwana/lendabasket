@@ -1,0 +1,16 @@
+/**
+ * Cards
+ *
+ * Adds functionality to the base bootstrap cards element
+ */
+
+.card {
+  &.selected {
+    background-color: $primary;
+    color: $white;
+  }
+
+  .card-footer {
+    background: $card-footer-bg;
+  }
+}

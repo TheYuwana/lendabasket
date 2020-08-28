@@ -1,0 +1,25 @@
+.lightbox {
+  display: none;
+
+  &.iframe {
+    height: 85vh;
+    width: 85vw;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      border: 0;
+    }
+  }
+
+  @each $name, $size in $grid-breakpoints {
+    &.lightbox-#{$name} {
+      width: $size;
+      max-width: 90vw;
+    }
+  }
+}

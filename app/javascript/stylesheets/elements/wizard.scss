@@ -1,0 +1,26 @@
+/**
+ * Shows the account progress in wizard form
+ */
+
+.wizard {
+  .step {
+    position: relative;
+
+    .line {
+      position: absolute;
+      width: 50%;
+      top: 50%;
+      margin-top: -2px;
+      height: 4px;
+      z-index: -1;
+
+      // Position
+      &.line-left {
+        left: -15px;
+      }
+      &.line-right {
+        right: -15px;
+      }
+    }
+  }
+}

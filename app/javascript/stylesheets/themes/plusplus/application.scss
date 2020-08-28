@@ -1,0 +1,18 @@
+/**
+ *
+ * PlusPlus themed css bundle
+ *
+ */
+
+//
+// Perform overrides
+//
+
+@import "variables";
+@import "overrides";
+
+//
+// Finally, import the base scss that we are overriding
+//
+
+@import "../../application";

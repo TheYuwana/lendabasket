@@ -1,0 +1,47 @@
+{
+  "data": [
+    {
+      "id": "45",
+      "attributes": {
+        "annualized_interest": "5.5",
+        "confirmed_funding_cents": 1100000,
+        "country": "KE",
+        "currency": "EUR",
+        "funding_expires_at": "2024-06-24T14:23:35.000+02:00",
+        "funding_target_cents": 8000000,
+        "impact_indicators": {
+          "jobs_created": "6",
+          "people_reached": "10000",
+          "tons_of_co2_reduced": "10000"
+        },
+        "intro": "With a loan of EUR 80,000 Sollatek can provide 10,000 solar lanterns to households and companies in Kenya.",
+        "maturity_in_months": 24,
+        "name": "Sollatek Electronics Kenya",
+        "number_of_investors": 45,
+        "published_at": "2019-06-24T00:00:00.000+02:00",
+        "sector": "sustainable_energy"
+      }
+    },
+    {
+      "id": "48",
+      "attributes": {
+        "annualized_interest": "3.0",
+        "confirmed_funding_cents": 210000,
+        "country": "IN",
+        "currency": "EUR",
+        "funding_expires_at": "2024-06-24T14:23:35.000+02:00",
+        "funding_target_cents": 1190000,
+        "impact_indicators": {
+          "jobs_created": "4",
+          "people_reached": "191"
+        },
+        "intro": "With EUR 11,900 around 43 women can expand their tailoring, saree, broom, grocery, poultry, masala and other businesses.",
+        "maturity_in_months": 18,
+        "name": "Prayas",
+        "number_of_investors": 23,
+        "published_at": "2019-06-24T00:00:00.000+02:00",
+        "sector": "financial_services"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+/**
+ * Overrides specifically for PlusPlus
+ */
+
+.lead {
+  font-family: $headings-font-family;
+}
+
+.summation {
+  font-family: "Maxeville", sans-serif;
+  text-transform: uppercase;
+}
+
+// Brand icon backgrounds
+
+@each $name
+  in ("azalea", "azalea-blackberry", "blackberry", "blackberry-azalea", "wit")
+{
+  .bg-brandicon-#{$name} {
+    background-position: 50% 50% !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-image: url("brandicons/#{$name}.svg") !important;
+  }
+}

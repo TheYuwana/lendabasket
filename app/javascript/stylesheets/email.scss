@@ -1,0 +1,29 @@
+/**
+ * Email scss. Handled by premailer-rails
+ */
+
+// Import variables so they are available
+@import "~bootstrap/scss/functions";
+@import "variables";
+
+// Import bootstrap stuff, but only what we need
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/tables";
+
+// Import fonts
+@import "mixins";
+
+// Import email main structure
+@import "email/structure";
+@import "email/utilities";
+
+// Add some required utilities to email.scss
+@import "utilities/img";
+@import "utilities/html-elements";

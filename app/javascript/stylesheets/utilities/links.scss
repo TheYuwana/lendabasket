@@ -1,0 +1,15 @@
+/**
+ * Utility classes specifically for links
+ */
+
+.no-link-styling {
+  &,
+  a {
+    &,
+    &:hover,
+    &:active {
+      color: unset !important;
+      text-decoration: unset !important;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+/**
+ * Bootstrap overrides where their default behavior makes no sense
+ */
+
+// Alert overrides
+
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+    @include alert-variant($value, $value, color-yiq($value));
+  }
+}
+
+//
+// Pagination
+//
+// We override the default bootstrap behaviour (no-wrap) to ensure by default
+// pagination instances do not break the viewport, but wrap down instead.
+//
+
+.pagination {
+  flex-wrap: wrap;
+}

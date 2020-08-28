@@ -1,0 +1,15 @@
+/**
+ * Overrides for the noUi slider
+ */
+
+.noUi-target {
+  .noUi-base {
+    .noUi-connect {
+      background: theme-color("blue");
+    }
+  }
+  .noUi-tooltip {
+    top: 120%;
+    bottom: unset;
+  }
+}

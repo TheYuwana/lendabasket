@@ -1,0 +1,12 @@
+/**
+ * Simple utility classes to be used in combination with bootstraps'
+ * .table element
+ */
+
+.table {
+  &.table-stripeless {
+    td {
+      border-top: none;
+    }
+  }
+}

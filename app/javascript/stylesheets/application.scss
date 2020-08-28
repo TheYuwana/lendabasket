@@ -1,0 +1,29 @@
+/**
+ * Main lendahand.com application file, this file only references other scss
+ * seperate from mail.scss which contains mail css.
+ */
+
+// Import bootstrap and variables first
+
+@import "~bootstrap/scss/functions";
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+
+// Import other css dependencies
+@import "~featherlight/release/featherlight.min";
+@import "~nouislider/distribute/nouislider.min";
+@import "~select2/src/scss/core";
+@import "~select2-bootstrap4-theme/src/select2-bootstrap4";
+@import "~slick-carousel/slick/slick";
+@import "~shepherd.js/dist/css/shepherd";
+
+// Import app specific less files
+@import "lendahand-icon-font";
+@import "mixins";
+@import "fonts";
+@import "structure";
+@import "elements";
+@import "utilities";
+
+// Import vendor overrides
+@import "overrides";

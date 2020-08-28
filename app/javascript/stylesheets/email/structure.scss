@@ -1,0 +1,26 @@
+/**
+ * Define the main structural elements of emails
+ */
+
+.background {
+  background-color: $light;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 4em;
+  border: none;
+
+  .container {
+    border: none;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+
+    .content {
+      padding: $grid-gutter-width;
+    }
+  }
+}

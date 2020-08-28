@@ -1,0 +1,26 @@
+/**
+ * Slick carousel overrides
+ */
+
+.slick-slider {
+  .slick-next,
+  .slick-prev {
+    font-size: 30px;
+    height: 30px;
+
+    &::before {
+      font-size: 30px;
+    }
+  }
+
+  .slick-prev {
+    left: -10px;
+  }
+  .slick-next {
+    right: -5px;
+  }
+
+  .slick-slide {
+    margin: 0 15px;
+  }
+}
