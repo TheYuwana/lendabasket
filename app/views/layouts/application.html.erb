@@ -15,6 +15,8 @@
   <%= stylesheet_pack_tag "application", defer: "true",
                                          data: {turbolinks_track: "reload"} %>
 
+  <%= stylesheet_pack_tag 'vue_basket' %>
+
 </head>
 <body>
   <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
@@ -25,5 +27,8 @@
   </nav>
 
   <%= yield %>
+
+  <%= javascript_pack_tag 'vue_basket' %>
+  <%= javascript_pack_tag 'main' %>
 </body>
 </html>

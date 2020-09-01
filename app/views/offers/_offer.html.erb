@@ -1,4 +1,5 @@
 <div class="card my-5 border-0 shadow">
+  
   <div class="card-body" data-offer-id=<%= offer.id %> >
     <h2><%= offer.name %></h2>
     <p><%= offer.intro %></p>
@@ -33,5 +34,7 @@
     <div class="small text-right">
       <%= humanized_money_with_symbol(offer.available_amount) %> to go
     </div>
+
+    <button data-offer-id=<%= offer.id %> class="card-basket-button">Add to basket</button>
   </div>
 </div>

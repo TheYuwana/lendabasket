@@ -5,6 +5,7 @@
  */
 
 .card {
+  position: relative;
   &.selected {
     background-color: $primary;
     color: $white;
@@ -12,5 +13,22 @@
 
   .card-footer {
     background: $card-footer-bg;
+  }
+
+  &-basket-button{
+    background-color: $teal;
+    border: 0px;
+    color: white;
+    padding: 5px 20px;
+    transition: opacity 0.3s;
+
+    &-remove{
+      background-color: $coral;
+    }
+
+    &:hover{
+      cursor: pointer;
+      opacity: 0.8;
+    }
   }
 }

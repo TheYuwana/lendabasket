@@ -7,6 +7,10 @@ class OrdersController < ApplicationController
     render json: succes_body.to_json, status: 201
   end
 
+  def get_payment_methods 
+    render json: PAYMENT_METHODS.to_json, status: 200
+  end
+
   private
 
   def validate_investments
